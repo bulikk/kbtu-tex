@@ -1,0 +1,45 @@
+% Hello, this is a template document for your thesis
+% Vadim K.
+
+% Basic formatting (font size and spacing, paper margins)
+\documentclass[12pt]{report}
+\usepackage[a4paper, inner=3cm, outer=1cm, top=2cm, bottom=2cm, bindingoffset=0cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+
+\include{Config}
+
+\begin{document}
+	
+	% Title & assignment
+	\input{title.tex}
+
+	% Abstract
+	\include{0.Abstract}
+	
+	% Table of contents,
+	% LaTeX counts pages without the cover and abstract, 
+	% so you should manually set the page, where TOC starts
+	\setcounter{page}{10}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	\include{1.Introduction}
+	\include{2.Chapter-1}
+	\include{3.Chapter-2}
+	\include{4.Implementation}
+	\include{5.Experimental_phase}
+
+	\include{economical_overview}
+	\include{labor_and_health_safety}
+
+	\include{6.Conclusion}
+
+	\bibliographystyle{unsrt}
+	\bibliography{Bibliography}
+	
+	% Appendix
+	\appendix
+	\include{7.Appendix}
+
+\end{document}
