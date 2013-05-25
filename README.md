@@ -8,3 +8,5 @@ To make it work you should have
 In order to update your packages, use TeX Live Utility (it is installed with the distribution)
 
 <a href="http://en.wikibooks.org/wiki/LaTeX">TeX grammar wiki</a>
+
+<a href="http://tug.org/TUGboat/tb33-3/tb105thurnherr.pdf">How to set font size in TeX</a>
