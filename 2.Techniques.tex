@@ -6,18 +6,21 @@ In the past project management was different. Not only because the formal discip
 % Project definition, everything is a project, important skill
 Project definition, as a temporary endeavour with a defined beginning and end \cite{chatfield}, undertaken to meet unique goals and objectives \cite{nokes} extends to the simple premise: everything is a project. For example important presentation or ``career development" project, or even  employee development (each employee represents a single ``project" in which it is required to keep track of performance and plan to help him or her develop). Pursuing goals makes project management techniques essential to get things done, and especially important for personal ones.
 
-% 
+% Transition from general project management to modern software / product development methods
+Downscaling project management to apply to the personal projects or small businesses required a different approach. In comparison to traditional ``waterfall'' model, which is inflexible and can potentially lead to a harmful consequences, a number of new methods emerged.
 
 \section{Agile methods}
 
-Agile methods are a reaction to traditional ways of developing software and acknowledge the ``need for an alternative to documentation driven, heavyweight software development processes".
+% Connect previous paragraph to "agile" introduction
+A group of such methods, called ``Agile" are a reaction to traditional ways of developing software and acknowledge the ``need for an alternative to documentation driven, heavyweight software development processes".
 
-It promotes adaptive planning, evolutionary development and delivery, a time-boxed iterative approach, and encourages rapid and flexible response to change. It is a conceptual framework that promotes foreseen interactions throughout the development cycle.
+The core of these methods consists of adaptive planning, evolutionary development and delivery, an iterative approach, and rapid and flexible response to change.
 
 In 2001 the Manifesto for Agile Software Development \cite{agile-manifesto} was published to define the approach now known as agile software development. 
 
 Some of the manifesto's authors formed the Agile Alliance (\url{http://www.agilealliance.org/}), a nonprofit organization that promotes software development according to the manifesto's principles.
 
+% Manifesto itself
 The Agile Manifesto:
 \begin{quotation}
 \begin{small}
@@ -35,16 +38,14 @@ That is, while there is value in the items on the right, we value the items on t
 \end{small}
 \end{quotation}
 
-Individuals and interactions – in agile development, self-organization and motivation are important, as are interactions like co-location and pair programming.
+% Explanation
 
-Working software – working software will be more useful and welcome than just presenting documents to clients in meetings.
+Meaning, that self-organisation and motivation are important, working software will be more useful and welcome as a presentation for clients in meetings, collaboration leads to a better product, effectively tailored to the customer needs and quick changes allow higher quality of product.
 
-Customer collaboration – requirements cannot be fully collected at the beginning of the software development cycle, therefore continuous customer or stakeholder involvement is very important.
+% Prinicples
 
-Responding to change – agile development is focused on quick responses to change and continuous development.[7]
-
-According to Kent Beck,[8] the Agile Manifesto is based on twelve principles:
-\begin{enumerate}
+According to Kent Beck,\cite{beck} the Agile Manifesto is based on twelve principles:
+\begin{compactenum}
 \item Customer satisfaction by rapid delivery of useful software
 \item Welcome changing requirements, even late in development
 \item Working software is delivered frequently (weeks rather than months)
@@ -57,135 +58,96 @@ According to Kent Beck,[8] the Agile Manifesto is based on twelve principles:
 \item Simplicity—the art of maximizing the amount of work not done—is essential
 \item Self-organizing teams
 \item Regular adaptation to changing circumstances
-\end{enumerate}
+\end{compactenum}
 
-Large-scale agile software development remains an active research area.[39][40]
+% Where to use
 
-Agile development has been widely seen as being more suitable for certain types of environment, including small teams of experts.[41][42]:157
+Agile development is popular in a certain types of environment, including small teams. However a number of thing may negatively impact the success of an agile project:
 
-Positive reception towards Agile methods has been observed in Embedded domain across Europe in recent years.[43]
+\begin{compactenum}
+\item Large-scale development efforts (>20 developers), though scaling strategies \cite{ambler} and evidence of some large projects \cite{schaaf} have been described.
+\item Distributed development efforts (non-colocated teams). Still there are examples of successful companies (37 Signals).
+\item Forcing an agile process on a development team
+\item Mission-critical systems where failure is not an option at any cost (e.g. software for air traffic control).
+\end{compactenum}
 
-Some things that may negatively impact the success of an agile project are:
+Agile methods have been extensively used for development of software products and some of them use certain characteristics of software, such as object technologies. However, these techniques can be applied to the development of non-software products, such as computers, motor vehicles, medical devices, food, and clothing.
 
-Large-scale development efforts (>20 developers), though scaling strategies[40] and evidence of some large projects[44] have been described.
-
-Distributed development efforts (non-colocated teams). 
-
-Strategies have been described in Bridging the Distance[45] and Using an Agile Software Process with Offshore Development[46]
-
-Forcing an agile process on a development team[47]
-
-Mission-critical systems where failure is not an option at any cost (e.g. software for air traffic control).
-
-The early successes, challenges and limitations encountered in the adoption of agile methods in a large organization have been documented.[48]
-
-In terms of outsourcing agile development, Michael Hackett, Sr. Vice President of LogiGear Corporation has stated that "the offshore team ... should have expertise, experience, good communication skills, inter-cultural understanding, trust and understanding between members and groups and with each other."[49]
-
-Agile methods have been extensively used for development of software products and some of them use certain characteristics of software, such as object technologies.[50] However, these techniques can be applied to the development of non-software products, such as computers, motor vehicles, medical devices, food, and clothing; see Flexible product development.
-
-\begin{longtable}{|p{0.25\textwidth}|p{0.25\textwidth}|p{0.25\textwidth}|}
-\caption{Suitability of different development methods}\label{tab:suitabilityddm} \\
-	\hline
-	\textbf{Agile} & \textbf{Plan-driven} & \textbf{Formal methods} \\
-	\hline
-	\endhead
-	Low criticality & High criticality & Extreme criticality \\
-	\hline
-	Senior developers & Junior developers & Senior developers \\
-	\hline
-	Requirements change often & Requirements do not change often & Limited requirements, limited features \\
-	\hline
-% дописать
-\end{longtable}
+%\begin{longtable}{|p{0.25\textwidth}|p{0.25\textwidth}|p{0.25\textwidth}|}
+%\caption{Suitability of different development methods}\label{tab:suitabilityddm} \\
+%	\hline
+%	\textbf{Agile} & \textbf{Plan-driven} & \textbf{Formal methods} \\
+%	\hline
+%	\endhead
+%	Low criticality & High criticality & Extreme criticality \\
+%	\hline
+%	Senior developers & Junior developers & Senior developers \\
+%	\hline
+%	Requirements change often & Requirements do not change often & Limited requirements, limited features \\
+%	\hline
+%% дописать
+%\end{longtable}
 
 
 \section{Scrum}
 
-\url{http://scrum.org} These all are from Scrum Guide
+One of the implementations of Agile philosophy is Scrum.
 
-Scrum is a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.
-
-The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts, and rules. Each component within the framework serves a specific purpose and is essential to Scrum’s success and usage.
-
-\subsection{Scrum theory}
-
-Scrum is founded on empirical process control theory, or empiricism. Empiricism asserts that knowledge comes from experience and making decisions based on what is known. Scrum
-employs an iterative, incremental approach to optimise predictability and control risk.
-
-\subsubsection{Transparency}
-
-Significant aspects of the process must be visible to those responsible for the outcome. 
-
-Transparency requires those aspects be defined by a common standard so observers share a common understanding of what is being seen.
-
-For example:
-\begin{itemize}
-    \item A common language referring to the process must be shared by all participants; and,
-    \item A common definition of “Done” must be shared by those performing the work and those accepting the work product.
-\end{itemize}
-
-\subsubsection{Inspection}
-
-Scrum users must frequently inspect Scrum artifacts and progress toward a goal to detect undesirable variances. Their inspection should not be so frequent that inspection gets in the way of the work. Inspections are most beneficial when diligently performed by skilled inspectors at 
-the point of work.
-
-\subsubsection{Adaptation}
-
-If an inspector determines that one or more aspects of a process deviate outside acceptable limits, and that the resulting product will be unacceptable, the process or the material being processed must be adjusted. An adjustment must be made as soon as possible to minimize further deviation.
-
-Scrum prescribes four formal opportunities for inspection and adaptation, as described in the Scrum Events section of this document.
-
-\begin{itemize}
-\item Sprint Planning Meeting
-\item Daily Scrum 
-\item Sprint Review
-\item Sprint Retrospective
-\end{itemize}
+Authors describe Scrum, \cite{scrum-guide} as a framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.
 
 \subsection{The Scrum team}
 
-The Scrum Team consists of a Product Owner, the Development Team, and a Scrum Master. Scrum Teams are self-organizing and cross-functional. Self-organizing teams choose how best to accomplish their work, rather than being directed by others outside the team. Cross-functional teams have all competencies needed to accomplish the work without depending on others not part of the team. The team model in Scrum is designed to optimize flexibility, creativity, and productivity.
+The Scrum Team consists of a Product Owner, the Development Team, and a Scrum Master. Scrum Teams are self-organising and cross-functional. Self-organising teams choose how best to accomplish their work, rather than being directed by others outside the team. Cross-functional teams have all competencies needed to accomplish the work without depending on others not part of the team. The team model in Scrum is designed to optimise flexibility, creativity, and productivity.
 
-Scrum Teams deliver products iteratively and incrementally, maximizing opportunities for feedback. Incremental deliveries of ``Done" product ensure a potentially useful version of 
+Scrum Teams deliver products iteratively and incrementally, maximising opportunities for feedback. Incremental deliveries of ``Done" product ensure a potentially useful version of 
 working product is always available.
 
 \subsection{Scrum events}
 
-Prescribed events are used in Scrum to create regularity and to minimize the need for meetings not defined in Scrum. Scrum uses time-boxed events, such that every event has a maximum duration. This ensures an appropriate amount of time is spent planning without allowing waste in the planning process.
+Prescribed events are used in Scrum to create regularity and to minimise the need for meetings not defined in Scrum. Scrum uses time-boxed events, such that every event has a maximum duration. This ensures an appropriate amount of time is spent planning without allowing waste in the planning process.
 
 Other than the Sprint itself, which is a container for all other events, each event in Scrum is a formal opportunity to inspect and adapt something. These events are specifically designed to enable critical transparency and inspection. Failure to include any of these events results in reduced transparency and is a lost opportunity to inspect and adapt.
 
 \subsection{Scrum artifacts}
 
-Scrum’s artifacts represent work or value in various ways that are useful in providing transparency and opportunities for inspection and adaptation. Artifacts defined by Scrum are specifically designed to maximize transparency of key information needed to ensure Scrum Teams are successful in delivering a “Done” Increment.
+Scrum’s artifacts represent work or value in various ways that are useful in providing transparency and opportunities for inspection and adaptation. Artifacts defined by Scrum are specifically designed to maximise transparency of key information needed to ensure Scrum Teams are successful in delivering a ``Done" Increment.
 
 \section{RAD -- Rapid Application Development}
 
-RAD is an integrated set of techniques, guidelines and tools that facilitate deploying a customer's software needs within a short period of time. This predefined timeframe is called a ``timebox". The software product evolves during the RAD development process based on continued customer feedback. In addition, the whole software product is not delivered at once, but is delivered in pieces by order of business importance.
+RAD is an integrated set of techniques, guidelines and tools that facilitate deploying a customer's software needs within a short period of time. This predefined timeframe is called a ``timebox". The software product evolves during the RAD development process based on continued customer feedback. In addition, the whole software product is not delivered at once, but is delivered in pieces by order of business importance. \cite{gottesdiener}
+
+% bull's eye for RAD
+% Timebox for each chunk
+
+The RAD process defies a linear definition of steps carried out in a sequence. \cite{gottesdiener}
 
 \subsection{Phases of RAD}
 
 \begin{enumerate}
-\item Requirements Planning phase – combines elements of the system planning and systems analysis phases of the Systems Development Life Cycle (SDLC). Users, managers, and IT staff members discuss and agree on business needs, project scope, constraints, and system requirements. It ends when the team agrees on the key issues and obtains management authorization to continue.
+\item Requirements Planning phase -- combines elements of the system planning and systems analysis. During this stage, a definition of the project scope is completed along with some preliminary data/process analysis, risk assessment and estimating.
 
-\item User design phase – during this phase, users interact with systems analysts and develop models and prototypes that represent all system processes, inputs, and outputs. The RAD groups or subgroups typically use a combination of Joint Application Development (JAD) techniques and CASE tools to translate user needs into working models. User Design is a continuous interactive process that allows users to understand, modify, and eventually approve a working model of the system that meets their needs.
+\item User design phase -- during this phase, users interact with systems analysts and develop models and prototypes that represent all system processes, inputs, and outputs. The RAD groups or subgroups typically use a combination of Joint Application Development (JAD) techniques and CASE tools to translate user needs into working models. User Design is a continuous interactive process that allows users to understand, modify, and eventually approve a working model of the system that meets their needs.
 
-\item Construction phase – focuses on program and application development task similar to the SDLC. In RAD, however, users continue to participate and can still suggest changes or improvements as actual screens or reports are developed. Its tasks are programming and application development, coding, unit-integration and system testing.
+\item Construction phase -- focuses on program and application development task similar to the SDLC. In RAD, however, users continue to participate and can still suggest changes or improvements as actual screens or reports are developed. Its tasks are programming and application development, coding, unit-integration and system testing.
 
-\item Cutover phase – resembles the final tasks in the SDLC implementation phase, including data conversion, testing, changeover to the new system, and user training. Compared with traditional methods, the entire process is compressed. As a result, the new system is built, delivered, and placed in operation much sooner.
+\item Cutover phase -- resembles the final tasks in the SDLC implementation phase, including data conversion, testing, changeover to the new system, and user training. Compared with traditional methods, the entire process is compressed. As a result, the new system is built, delivered, and placed in operation much sooner.
 \end{enumerate}
+
+In addition to using such techniques as timeboxing, chunking and customer-driven product delivery, RAD is based on the premise that software development is a discovery process.
 
 % comparison table agile, lean, RAD, Scrum
 
 \section{TDD -- Test-Driven Development}
 
-Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards. Kent Beck, who is credited with having developed or 'rediscovered' the technique, stated in 2003 that TDD encourages simple designs and inspires confidence.
+Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards. Kent Beck, who is credited with having developed or `rediscovered' the technique, stated in 2003 that TDD encourages simple designs and inspires confidence.
 
 \subsection{TDD Cycle}
 
+The TDD techniques is particularly interesting in terms of feedback, which helps to fail fast, be flexible and get a feeling of moving towards a goal. This is reached by using the following cycle.
+
 \subsubsection{Add a test}
 
-In test-driven development, each new feature begins with writing a test. This test must inevitably fail because it is written before the feature has been implemented. (If it does not fail, then either the proposed "new" feature already exists or the test is defective.) To write a test, the developer must clearly understand the feature's specification and requirements. The developer can accomplish this through use cases and user stories to cover the requirements and exception conditions, and can write the test in whatever testing framework is appropriate to the software environment. This could also be a modification of an existing test. This is a differentiating feature of test-driven development versus writing unit tests after the code is written: it makes the developer focus on the requirements before writing the code, a subtle but important difference.
+In test-driven development, each new feature begins with writing a test. This test must inevitably fail because it is written before the feature has been implemented. (If it does not fail, then either the proposed ``new" feature already exists or the test is defective.) To write a test, the developer must clearly understand the feature's specification and requirements. The developer can accomplish this through use cases and user stories to cover the requirements and exception conditions, and can write the test in whatever testing framework is appropriate to the software environment. This could also be a modification of an existing test. This is a differentiating feature of test-driven development versus writing unit tests after the code is written: it makes the developer focus on the requirements before writing the code, a subtle but important difference.
 
 \subsubsection{Run all tests and see if the new one fails}
 
@@ -207,23 +169,25 @@ Now the code can be cleaned up as necessary. By re-running the test cases, the d
 
 \subsubsection{Repeat}
 
-Starting with another new test, the cycle is then repeated to push forward the functionality. The size of the steps should always be small, with as few as 1 to 10 edits between each test run. If new code does not rapidly satisfy a new test, or other tests fail unexpectedly, the programmer should undo or revert in preference to excessive debugging. Continuous integration helps by providing revertible checkpoints. When using external libraries it is important not to make increments that are so small as to be effectively merely testing the library itself,[3] unless there is some reason to believe that the library is buggy or is not sufficiently feature-complete to serve all the needs of the main program being written.
-
+Starting with another new test, the cycle is then repeated to push forward the functionality. The size of the steps should always be small, with as few as 1 to 10 edits between each test run. If new code does not rapidly satisfy a new test, or other tests fail unexpectedly, the programmer should undo or revert in preference to excessive debugging. Continuous integration helps by providing revertible checkpoints. When using external libraries it is important not to make increments that are so small as to be effectively merely testing the library itself, unless there is some reason to believe that the library is buggy or is not sufficiently feature-complete to serve all the needs of the main program being written.
 
 % Doesn't include other business goals. How we can project these on other aspects of business, not only development?
 
+
 \section{FDD -- Feature-Driven Development}
 
-Feature-driven development (FDD) is an iterative and incremental software development process. It is one of a number of Agile methods for developing software and forms part of the Agile Alliance. FDD blends a number of industry-recognised best practices into a cohesive whole. These practices are all driven from a client-valued functionality (feature) perspective. Its main purpose is to deliver tangible, working software repeatedly in a timely manner.
+FDD allows to manage projects at a very high level and apply other methodologies (such as TDD) at a lower level of abstraction. It is an iterative and incremental software development process, which primary focus is on being able to set estimates and schedules and to report on the status of a project, or its part. 
 
 \subsection{Phases of FDD}
 
+FDD consists of five basic activities. For accurate state reporting and keeping track of the software development project, milestones that mark the progress made on each feature are defined.
+
 \subsubsection{Develop overall model}
-The project started with a high-level walkthrough of the scope of the system and its context. Next, detailed domain walkthroughs were held for each modeling area. In support of each domain, walkthrough models were then composed by small groups, which were presented for peer review and discussion. One of the proposed models, or a merge of them, was selected which became the model for that particular domain area. Domain area models were merged into an overall model, and the overall model shape was adjusted along the way.
+The project started with a high-level walkthrough of the scope of the system and its context. Next, detailed domain walkthroughs were held for each modelling area. In support of each domain, walkthrough models were then composed by small groups, which were presented for peer review and discussion. One of the proposed models, or a merge of them, was selected which became the model for that particular domain area. Domain area models were merged into an overall model, and the overall model shape was adjusted along the way.
 
 \subsubsection{Build feature list}
 
-The knowledge that was gathered during the initial modeling was used to identify a list of features. This was done by functionally decomposing the domain into subject areas. Subject areas each contain business activities, the steps within each business activity formed the categorized feature list. Features in this respect were small pieces of client-valued functions expressed in the form "<action> <result> <object>", for example: 'Calculate the total of a sale' or 'Validate the password of a user'. Features should not take more than two weeks to complete, else they should be broken down into smaller pieces.
+The knowledge that was gathered during the initial modelling was used to identify a list of features. This was done by functionally decomposing the domain into subject areas. Subject areas each contain business activities, the steps within each business activity formed the categorised feature list. Features in this respect were small pieces of client-valued functions expressed in the form ``<action> <result> <object>", for example: `Calculate the total of a sale' or `Validate the password of a user'. Features should not take more than two weeks to complete, else they should be broken down into smaller pieces.
 
 \subsubsection{Plan by feature}
 
@@ -237,135 +201,12 @@ A design package was produced for each feature. A chief programmer selected a sm
 
 After a successful design inspection a per feature activity to produce a completed client-valued function (feature) is being produced. The class owners develop the actual code for their classes. After a unit test and a successful code inspection, the completed feature is promoted to the main build.
 
-\subsection{Best practices}
-
-Feature-Driven Development is built around a core set of industry-recognized best practices, derived from software engineering. These practices are all driven from a client-valued feature perspective. It is the combination of these practices and techniques that makes FDD so compelling. The best practices that make up FDD are shortly described below. For each best practice a short description will be given.
-
-\begin{itemize}
-\item Domain Object Modeling. Domain Object Modeling consists of exploring and explaining the domain of the problem to be solved. The resulting domain object model provides an overall framework in which to add features.
-\item Developing by Feature. Any function that is too complex to be implemented within two weeks is further decomposed into smaller functions until each sub-problem is small enough to be called a feature. This makes it easier to deliver correct functions and to extend or modify the system.
-\item Individual Class (Code) Ownership. Individual class ownership means that distinct pieces or grouping of code are assigned to a single owner. The owner is responsible for the consistency, performance, and conceptual integrity of the class.
-\item Feature Teams. A feature team is a small, dynamically formed team that develops a small activity. By doing so, multiple minds are always applied to each design decision and also multiple design options are always evaluated before one is chosen.
-\item Inspections. Inspections are carried out to ensure good quality design and code, primarily by detection of defects.
-\item Configuration Management. Configuration management helps with identifying the source code for all features that have been completed to date and to maintain a history of changes to classes as feature teams enhance them.
-\item Regular Builds. Regular builds ensure there is always an up to date system that can be demonstrated to the client and helps highlighting integration errors of source code for the features early.
-\item Visibility of progress and results. By frequent, appropriate, and accurate progress reporting at all levels inside and outside the project, based on completed work, managers are helped at steering a project correctly.
-\end{itemize}
-
-\section{RUP -- Rational Unified Process}
-
-The Rational Unified Process (RUP) is an iterative software development process framework created by the Rational Software Corporation, a division of IBM since 2003.[1] RUP is not a single concrete prescriptive process, but rather an adaptable process framework, intended to be tailored by the development organisations and software project teams that will select the elements of the process that are appropriate for their needs. RUP is a specific implementation of the Unified Process.
-
-\subsection{RUP building blocks}
-
-RUP is based on a set of building blocks, or content elements, describing what is to be produced, the necessary skills required and the step-by-step explanation describing how specific development goals are to be achieved. The main building blocks, or content elements, are the following:
-\begin{itemize}
-\item Roles (who) – A Role defines a set of related skills, competencies and responsibilities.
-\item Work Products (what) – A Work Product represents something resulting from a task, including all the documents and models produced while working through the process.
-\item Tasks (how) – A Task describes a unit of work assigned to a Role that provides a meaningful result.
-\end{itemize}
-Within each iteration, the tasks are categorized into nine disciplines:
-\begin{itemize}
-\item Six ``engineering disciplines"
-\item Business Modeling
-\item Requirements
-\item Analysis and Design
-\item Implementation
-\item Test
-\item Deployment
-\item Three supporting disciplines
-\item Configuration and Change Management
-\item Project Management
-\item Environment
-\end{itemize}
-
-\subsection{Four project lifecycle phases}
-
-The RUP has determined a project life cycle consisting of four phases. These phases allow the process to be presented at a high level in a similar way to how a 'waterfall'-styled project might be presented, although in essence the key to the process lies in the iterations of development that lie within all of the phases. Also, each phase has one key objective and milestone at the end that denotes the objective being accomplished. The visualization of RUP phases and disciplines over time is referred to as the RUP hump chart.
-
-\subsubsection{Inception Phase}
-
-The primary objective is to scope the system adequately as a basis for validating initial costing and budgets. In this phase the business case which includes business context, success factors (expected revenue, market recognition, etc.), and financial forecast is established. To complement the business case, a basic use case model, project plan, initial risk assessment and project description (the core project requirements, constraints and key features) are generated. After these are completed, the project is checked against the following criteria:
-\begin{itemize}
-\item Stakeholder concurrence on scope definition and cost/schedule estimates.
-\item Requirements understanding as evidenced by the fidelity of the primary use cases.
-\item Credibility of the cost/schedule estimates, priorities, risks, and development process.
-\item Depth and breadth of any architectural prototype that was developed.
-\item Establishing a baseline by which to compare actual expenditures versus planned expenditures.
-\end{itemize}
-
-If the project does not pass this milestone, called the Lifecycle Objective Milestone, it either can be cancelled or repeated after being redesigned to better meet the criteria.
-
-\subsubsection{Elaboration Phase}
-The primary objective is to mitigate the key risk items identified by analysis up to the end of this phase. The elaboration phase is where the project starts to take shape. In this phase the problem domain analysis is made and the architecture of the project gets its basic form.
-
-The outcome of the elaboration phase is:
-\begin{itemize}
-\item A use-case model in which the use-cases and the actors have been identified and most of the use-case descriptions are developed. The use-case model should be 80\% complete.
-\item A description of the software architecture in a software system development process.
-\item An executable architecture that realises architecturally significant use cases.
-\item Business case and risk list which are revised.
-\item A development plan for the overall project.
-\item Prototypes that demonstrably mitigate each identified technical risk.
-\item A preliminary user manual (optional).
-\end{itemize}
-
-This phase must pass the Lifecycle Architecture Milestone criteria answering the following questions:
-\begin{itemize}
-\item Is the vision of the product stable?
-\item Is the architecture stable?
-\item Does the executable demonstration indicate that major risk elements are addressed and resolved?
-\item Is the construction phase plan sufficiently detailed and accurate?
-\item Do all stakeholders agree that the current vision can be achieved using current plan in the context of the current architecture?
-\item Is the actual vs. planned resource expenditure acceptable?
-\end{itemize}
-
-If the project cannot pass this milestone, there is still time for it to be cancelled or redesigned. However, after leaving this phase, the project transitions into a high-risk operation where changes are much more difficult and detrimental when made.
-
-The key domain analysis for the elaboration is the system architecture.
-
-\subsubsection{Construction Phase}
-
-The primary objective is to build the software system. In this phase, the main focus is on the development of components and other features of the system. This is the phase when the bulk of the coding takes place. In larger projects, several construction iterations may be developed in an effort to divide the use cases into manageable segments that produce demonstrable prototypes.
-
-This phase produces the first external release of the software. Its conclusion is marked by the Initial Operational Capability Milestone.
-
-\subsubsection{Transition Phase}
-The primary objective is to 'transit' the system from development into production, making it available to and understood by the end user. The activities of this phase include training the end users and maintainers and beta testing the system to validate it against the end users' expectations. The product is also checked against the quality level set in the Inception phase.
-
-If all objectives are met, the Product Release Milestone is reached and the development cycle is finished.
-
-\subsection{Best practises}
-Six Best Practices as described in the Rational Unified Process is a paradigm in software engineering, that lists six ideas to follow when designing any software project to minimise faults and increase productivity. These practices are:
-
-\subsubsection{Develop iteratively}
-
-It is best to know all requirements in advance; however, often this is not the case. Several software development processes exist that deal with providing solution on how to minimize cost in terms of development phases.
-
-\subsubsection{Manage requirements}
-
-Always keep in mind the requirements set by users.
-
-\subsubsection{Use components}
-
-Breaking down an advanced project is not only suggested but in fact unavoidable. This promotes ability to test individual components before they are integrated into a larger system. Also, code reuse is a big plus and can be accomplished more easily through the use of object-oriented programming.
-
-\subsubsection{Model visually}
-
-Use diagrams to represent all major components, users, and their interaction. ``UML", short for Unified Modeling Language, is one tool that can be used to make this task more feasible.
-
-\subsubsection{Verify quality}
-
-Always make testing a major part of the project at any point of time. Testing becomes heavier as the project progresses but should be a constant factor in any software product creation.
-
-\subsubsection{Control changes}
-
-Many projects are created by many teams, sometimes in various locations, different platforms may be used, etc. As a result it is essential to make sure that changes made to a system are synchronized and verified constantly.
-
 \section{Lean}
 
-Lean development can be summarized by seven principles, very close in concept to lean manufacturing principles:
-\begin{enumerate}
+Lean development is based on traditional lean principles, which are derived from the Japanese manufacturing industry. Generally ``Lean" is a production practice that considers the expenditure of resources for any goal other than the creation of value for the end customer to be wasteful, and thus a target for elimination. Working from the perspective of the customer who consumes a product or service, ``value" is defined as any action or process that a customer would be willing to pay for.
+
+Lean development can be summarised by seven principles, very close in concept to lean manufacturing principles:
+\begin{compactenum}
 \item Eliminate waste
 \item Amplify learning
 \item Decide as late as possible
@@ -373,131 +214,150 @@ Lean development can be summarized by seven principles, very close in concept to
 \item Empower the team
 \item Build integrity in
 \item See the whole
-\end{enumerate}
+\end{compactenum}
 
 \subsection{Lean manufacturing principles}
 
 \subsubsection{Eliminate waste}
 Everything not adding value to the customer is considered to be waste (muda). This includes:
-\begin{enumerate}
+\begin{compactenum}
 \item unnecessary code and functionality
 \item delay in the software development process
 \item unclear requirements
 \item insufficient testing, leading to avoidable process repetition
 \item bureaucracy
 \item slow internal communication
-\end{enumerate}
+\end{compactenum}
 
-In order to be able to eliminate waste, one should be able to recognize it. If some activity could be bypassed or the result could be achieved without it, it is waste. Partially done coding eventually abandoned during the development process is waste. Extra processes and features not often used by customers are waste. Waiting for other activities, teams, processes is waste. Defects and lower quality are waste. Managerial overhead not producing real value is waste. A value stream mapping technique is used to distinguish and recognize waste. The second step is to point out sources of waste and eliminate them. The same should be done iteratively until even essential-seeming processes and procedures are liquidated.
+In order to be able to eliminate waste, one should be able to recognise it. If some activity could be bypassed or the result could be achieved without it, it is waste. Partially done coding eventually abandoned during the development process is waste. Extra processes and features not often used by customers are waste. Waiting for other activities, teams, processes is waste. Defects and lower quality are waste. Managerial overhead not producing real value is waste. A value stream mapping technique is used to distinguish and recognise waste. The second step is to point out sources of waste and eliminate them. The same should be done iteratively until even essential-seeming processes and procedures are liquidated.
 
 \subsubsection{Amplify learning}
 
 Software development is a continuous learning process with the additional challenge of development teams and end product sizes. The best approach for improving a software development environment is to amplify learning. The accumulation of defects should be prevented by running tests as soon as the code is written. Instead of adding more documentation or detailed planning, different ideas could be tried by writing code and building. The process of user requirements gathering could be simplified by presenting screens to the end-users and getting their input.
 
-The learning process is sped up by usage of short iteration cycles – each one coupled with refactoring and integration testing. Increasing feedback via short feedback sessions with customers helps when determining the current phase of development and adjusting efforts for future improvements. During those short sessions both customer representatives and the development team learn more about the domain problem and figure out possible solutions for further development. Thus the customers better understand their needs, based on the existing result of development efforts, and the developers learn how to better satisfy those needs. Another idea in the communication and learning process with a customer is set-based development – this concentrates on communicating the constraints of the future solution and not the possible solutions, thus promoting the birth of the solution via dialogue with the customer.
+The learning process is sped up by usage of short iteration cycles -- each one coupled with refactoring and integration testing. Increasing feedback via short feedback sessions with customers helps when determining the current phase of development and adjusting efforts for future improvements. During those short sessions both customer representatives and the development team learn more about the domain problem and figure out possible solutions for further development. Thus the customers better understand their needs, based on the existing result of development efforts, and the developers learn how to better satisfy those needs. Another idea in the communication and learning process with a customer is set-based development -- this concentrates on communicating the constraints of the future solution and not the possible solutions, thus promoting the birth of the solution via dialogue with the customer.
 
 \subsubsection{Decide as late as possible}
 
-As software development is always associated with some uncertainty, better results should be achieved with an options-based approach, delaying decisions as much as possible until they can be made based on facts and not on uncertain assumptions and predictions. The more complex a system is, the more capacity for change should be built into it, thus enabling the delay of important and crucial commitments. The iterative approach promotes this principle – the ability to adapt to changes and correct mistakes, which might be very costly if discovered after the release of the system.
+As software development is always associated with some uncertainty, better results should be achieved with an options-based approach, delaying decisions as much as possible until they can be made based on facts and not on uncertain assumptions and predictions. The more complex a system is, the more capacity for change should be built into it, thus enabling the delay of important and crucial commitments. The iterative approach promotes this principle -- the ability to adapt to changes and correct mistakes, which might be very costly if discovered after the release of the system.
 
-An agile software development approach can move the building of options earlier for customers, thus delaying certain crucial decisions until customers have realized their needs better. This also allows later adaptation to changes and the prevention of costly earlier technology-bounded decisions. This does not mean that no planning should be involved – on the contrary, planning activities should be concentrated on the different options and adapting to the current situation, as well as clarifying confusing situations by establishing patterns for rapid action. Evaluating different options is effective as soon as it is realized that they are not free, but provide the needed flexibility for late decision making.
+An agile software development approach can move the building of options earlier for customers, thus delaying certain crucial decisions until customers have realised their needs better. This also allows later adaptation to changes and the prevention of costly earlier technology-bounded decisions. This does not mean that no planning should be involved -- on the contrary, planning activities should be concentrated on the different options and adapting to the current situation, as well as clarifying confusing situations by establishing patterns for rapid action. Evaluating different options is effective as soon as it is realised that they are not free, but provide the needed flexibility for late decision making.
 
 \subsubsection{Deliver as fast as possible}
 
 In the era of rapid technology evolution, it is not the biggest that survives, but the fastest. The sooner the end product is delivered without considerable defect, the sooner feedback can be received, and incorporated into the next iteration. The shorter the iterations, the better the learning and communication within the team. Without speed, decisions cannot be delayed. Speed assures the fulfilling of the customer's present needs and not what they required yesterday. This gives them the opportunity to delay making up their minds about what they really require until they gain better knowledge. Customers value rapid delivery of a quality product.
 
-The just-in-time production ideology could be applied to software development, recognizing its specific requirements and environment. This is achieved by presenting the needed result and letting the team organize itself and divide the tasks for accomplishing the needed result for a specific iteration. At the beginning, the customer provides the needed input. This could be simply presented in small cards or stories – the developers estimate the time needed for the implementation of each card. Thus the work organization changes into self-pulling system – each morning during a stand-up meeting, each member of the team reviews what has been done yesterday, what is to be done today and tomorrow, and prompts for any inputs needed from colleagues or the customer. This requires transparency of the process, which is also beneficial for team communication. Another key idea in Toyota's Product Development System is set-based design. If a new brake system is needed for a car, for example, three teams may design solutions to the same problem. Each team learns about the problem space and designs a potential solution. As a solution is deemed unreasonable, it is cut. At the end of a period, the surviving designs are compared and one is chosen, perhaps with some modifications based on learning from the others - a great example of deferring commitment until the last possible moment. Software decisions could also benefit from this practice to minimize the risk brought on by big up-front design.
+The just-in-time production ideology could be applied to software development, recognising its specific requirements and environment. This is achieved by presenting the needed result and letting the team organise itself and divide the tasks for accomplishing the needed result for a specific iteration. At the beginning, the customer provides the needed input. This could be simply presented in small cards or stories -- the developers estimate the time needed for the implementation of each card. Thus the work organisation changes into self-pulling system -- each morning during a stand-up meeting, each member of the team reviews what has been done yesterday, what is to be done today and tomorrow, and prompts for any inputs needed from colleagues or the customer. This requires transparency of the process, which is also beneficial for team communication. Another key idea in Toyota's Product Development System is set-based design. If a new brake system is needed for a car, for example, three teams may design solutions to the same problem. Each team learns about the problem space and designs a potential solution. As a solution is deemed unreasonable, it is cut. At the end of a period, the surviving designs are compared and one is chosen, perhaps with some modifications based on learning from the others -- a great example of deferring commitment until the last possible moment. Software decisions could also benefit from this practice to minimise the risk brought on by big up-front design.
 
 \subsubsection{Empower the team}
 
-There has been a traditional belief in most businesses about the decision-making in the organization – the managers tell the workers how to do their own job. In a Work-Out technique, the roles are turned – the managers are taught how to listen to the developers, so they can explain better what actions might be taken, as well as provide suggestions for improvements. The lean approach favors the aphorism "find good people and let them do their own job," encouraging progress, catching errors, and removing impediments, but not micro-managing.
+There has been a traditional belief in most businesses about the decision-making in the organisation -- the managers tell the workers how to do their own job. In a Work-Out technique, the roles are turned -- the managers are taught how to listen to the developers, so they can explain better what actions might be taken, as well as provide suggestions for improvements. The lean approach favours the aphorism ``find good people and let them do their own job," encouraging progress, catching errors, and removing impediments, but not micro-managing.
 
-Another mistaken belief has been the consideration of people as resources. People might be resources from the point of view of a statistical data sheet, but in software development, as well as any organizational business, people do need something more than just the list of tasks and the assurance that they will not be disturbed during the completion of the tasks. People need motivation and a higher purpose to work for – purpose within the reachable reality, with the assurance that the team might choose its own commitments. The developers should be given access to the customer; the team leader should provide support and help in difficult situations, as well as ensure that skepticism does not ruin the team’s spirit.
+Another mistaken belief has been the consideration of people as resources. People might be resources from the point of view of a statistical data sheet, but in software development, as well as any organisational business, people do need something more than just the list of tasks and the assurance that they will not be disturbed during the completion of the tasks. People need motivation and a higher purpose to work for -- purpose within the reachable reality, with the assurance that the team might choose its own commitments. The developers should be given access to the customer; the team leader should provide support and help in difficult situations, as well as ensure that skepticism does not ruin the team’s spirit.
 
 \subsubsection{Build integrity in}
 
-The customer needs to have an overall experience of the System – this is the so-called perceived integrity: how it is being advertised, delivered, deployed, accessed, how intuitive its use is, price and how well it solves problems.
+The customer needs to have an overall experience of the System -- this is the so-called perceived integrity: how it is being advertised, delivered, deployed, accessed, how intuitive its use is, price and how well it solves problems.
 
-Conceptual integrity means that the system’s separate components work well together as a whole with balance between flexibility, maintainability, efficiency, and responsiveness. This could be achieved by understanding the problem domain and solving it at the same time, not sequentially. The needed information is received in small batch pieces – not in one vast chunk with preferable face-to-face communication and not any written documentation. The information flow should be constant in both directions – from customer to developers and back, thus avoiding the large stressful amount of information after long development in isolation.
+Conceptual integrity means that the system’s separate components work well together as a whole with balance between flexibility, maintainability, efficiency, and responsiveness. This could be achieved by understanding the problem domain and solving it at the same time, not sequentially. The needed information is received in small batch pieces -- not in one vast chunk with preferable face-to-face communication and not any written documentation. The information flow should be constant in both directions -- from customer to developers and back, thus avoiding the large stressful amount of information after long development in isolation.
 
 One of the healthy ways towards integral architecture is refactoring. As more features are added to the original code base, the harder it becomes to add further improvements. Refactoring is about keeping simplicity, clarity, minimum amount of features in the code. Repetitions in the code are signs for bad code designs and should be avoided. The complete and automated building process should be accompanied by a complete and automated suite of developer and customer tests, having the same versioning, synchronization and semantics as the current state of the System. At the end the integrity should be verified with thorough testing, thus ensuring the System does what the customer expects it to. Automated tests are also considered part of the production process, and therefore if they do not add value they should be considered waste. Automated testing should not be a goal, but rather a means to an end, specifically the reduction of defects.
 
 \subsubsection{See the whole}
 
-Software systems nowadays are not simply the sum of their parts, but also the product of their interactions. Defects in software tend to accumulate during the development process – by decomposing the big tasks into smaller tasks, and by standardizing different stages of development, the root causes of defects should be found and eliminated. The larger the system, the more organisations that are involved in its development and the more parts are developed by different teams, the greater the importance of having well defined relationships between different vendors, in order to produce a system with smoothly interacting components. During a longer period of development, a stronger subcontractor network is far more beneficial than short-term profit optimizing, which does not enable win-win relationships.
+Software systems nowadays are not simply the sum of their parts, but also the product of their interactions. Defects in software tend to accumulate during the development process -- by decomposing the big tasks into smaller tasks, and by standardising different stages of development, the root causes of defects should be found and eliminated. The larger the system, the more organisations that are involved in its development and the more parts are developed by different teams, the greater the importance of having well defined relationships between different vendors, in order to produce a system with smoothly interacting components. During a longer period of development, a stronger subcontractor network is far more beneficial than short-term profit optimising, which does not enable win-win relationships.
 
-Lean thinking has to be understood well by all members of a project, before implementing in a concrete, real-life situation. ``Think big, act small, fail fast; learn rapidly" – these slogans summarize the importance of understanding the field and the suitability of implementing lean principles along the whole software development process. Only when all of the lean principles are implemented together, combined with strong "common sense" with respect to the working environment, is there a basis for success in software development.
+\section{Summarising agile, RAD and lean}
 
-\section{Methodologies comparison}
+There is a common feature in all of the considered methodologies. According to table \ref{tab:prosconsitmet}, that is constructing a continuous feedback, which allows early failure and indicates whether a project goal is correct (or it should be adjusted) and a team progress. Each methodology provides its own level of abstraction and suggests tools to reduce chaos and uncertainty.
 
-A table from RAD wikipedia article
+Comparing iterative methodologies to traditional waterfall model it is possible to say, that they appeared because of emergent projects with elements changing fast (goals, business processes, markets, etc.). Nonetheless traditional project management provides tools to cope with uncertainties, called PERT (section \ref{sec:pert}).
 
-\section{Project management goals for small teams and start-ups}
+% Не нравится это предложение, нужно подумать
+Ability to get instant feedback and adjust goals is defined by a natural human attribute as pursuing order in consciousness. This claim will be considered in section \ref{sec:flow} on page \pageref{sec:flow}.
 
-Productivity
-
-Why should startups and small-teams should be sales-oriented or problem-solving oriented, but not technology oriented at first place? 
-
-The general goal of project management is collecting feedback in order to manage available resources to be in time. Why? -- Flow, will be considered later.
+\begin{longtable}{|p{0.15\textwidth}|p{0.35\textwidth}|p{0.35\textwidth}|}
+\caption{Pros and cons of iterative methodics}\label{tab:prosconsitmet} \\
+	\hline
+	\textbf{Name} & \textbf{Pros} & \textbf{Cons} \\
+	\hline
+	\endhead
+	Agile 
+	& Minimises feature creep by developing in short intervals resulting in miniature software projects and releasing the product in mini-increments. 
+	& Short iteration may add too little functionality, leading to significant delays in final iterations. Since Agile emphasises real-time communication (preferably face-to-face), using it is problematic for large multi-team distributed system development. Agile methods produce very little written documentation and require a significant amount of post-project documentation. \\
+	\hline
+	Lean 
+	& Creates minimalist solutions and delivers less functionality earlier; per the policy that 80\% today is better than 100\% tomorrow. 
+	& Product may lose its competitive edge because of insufficient core functionality and may exhibit poor overall quality. \\
+	\hline
+	RAD 
+	& Promotes strong collaborative atmosphere and dynamic gathering of requirements. Business owner actively participates in prototyping, writing test cases and performing unit testing. 
+	& Dependence on strong cohesive teams and individual commitment to the project. Decision-making relies on the feature functionality team and a communal decision-making process with lesser engineering authority. \\
+	\hline
+	Scrum 
+	& Agile framework. Improved productivity in teams previously paralysed by heavy ``process", ability to prioritise work, use of backlog for completing items in a series of short iterations or sprints, daily measured progress and communications. 
+	& Reliance on facilitation by a master who may lack the political skills to remove impediments and deliver the sprint goal. Due to reliance on self-organising teams and rejection of traditional centralised ``process control", internal power struggles can paralyse a team. \\
+	\hline
+\end{longtable}
 
 \subsection{PERT and Monte-Carlo simulation}
+\label{sec:pert}
 
-%One of the method to collect feedback is PERT.
-%
-%Statistical tool, used in PM, that is designed to analyse and represent the tasks involved in completing a given project.
-%
-%Monte-Carlo seeks for potential troubles and bottlenecks early.
+% Relate to the previous sections
 
-The Program (or Project) Evaluation and Review Technique, commonly abbreviated PERT, is a statistical tool, used in project management, that is designed to analyze and represent the tasks involved in completing a given project. First developed by the United States Navy in the 1950s, it is commonly used in conjunction with the critical path method (CPM).
+It is also important to consider traditional ways of uncertainties management in order to understand the evolution of project management and understand a project representation as a system (iterative methodologies lead to simplification of such system).
 
-PERT was developed primarily to simplify the planning and scheduling of large and complex projects. It was developed for the U.S. Navy Special Projects Office in 1957 to support the U.S. Navy's Polaris nuclear submarine project. It was able to incorporate uncertainty by making it possible to schedule a project while not knowing precisely the details and durations of all the activities. It is more of an event-oriented technique rather than start- and completion-oriented, and is used more in projects where time is the major factor rather than cost. It is applied to very large-scale, one-time, complex, non-routine infrastructure and Research and Development projects. An example of this was for the 1968 Winter Olympics in Grenoble which applied PERT from 1965 until the opening of the 1968 Games.
+Traditional ``waterfall" methodology provides a statistical tool, designed to analyse and represent the tasks involved in completing a given project.
+
+PERT was developed was developed for the U.S. Navy Special Projects Office in 1957 to support the U.S. Navy's Polaris nuclear submarine project \cite{fazar}. It was able to incorporate uncertainty by making it possible to schedule a project while not knowing precisely the details and durations of all the activities. It is more of an event-oriented technique rather than start- and completion-oriented, and is used more in projects where time is the major factor rather than cost. It is applied to very large-scale, one-time, complex, non-routine infrastructure and Research and Development projects. An example of this was for the 1968 Winter Olympics in Grenoble which applied PERT from 1965 until the opening of the 1968 Games.
 
 \subsubsection{Conventions}
 
-\begin{itemize}
+\begin{compactitem}
+% include pert illustration here
 \item A PERT chart is a tool that facilitates decision making. The first draft of a PERT chart will number its events sequentially in 10s (10, 20, 30, etc.) to allow the later insertion of additional events.
 \item Two consecutive events in a PERT chart are linked by activities, which are conventionally represented as arrows (see the diagram above).
 \item The events are presented in a logical sequence and no activity can commence until its immediately preceding event is completed.
-\item The planner decides which milestones should be PERT events and also decides their “proper” sequence.
+\item The planner decides which milestones should be PERT events and also decides their ``proper" sequence.
 \item A PERT chart may have multiple pages with many sub-tasks.
-\end{itemize}
+\end{compactitem}
 
 \subsubsection{Advantages}
-\begin{itemize}
+\begin{compactitem}
 \item PERT chart explicitly defines and makes visible dependencies (precedence relationships) between the work breakdown structure (commonly WBS) elements
 \item PERT facilitates identification of the critical path and makes this visible
 \item PERT facilitates identification of early start, late start, and slack for each activity,
 \item PERT provides for potentially reduced project duration due to better understanding of dependencies leading to improved overlapping of activities and tasks where feasible.
 \item The large amount of project data can be organised and presented in diagram for use in decision making.
-\end{itemize}
+\end{compactitem}
 
 \subsubsection{Disadvantages}
-\begin{itemize}
+\begin{compactitem}
 \item There can be potentially hundreds or thousands of activities and individual dependency relationships
 \item PERT is not easily scalable for smaller projects
 \item The network charts tend to be large and unwieldy requiring several pages to print and requiring special size paper
 \item The lack of a timeframe on most PERT/CPM charts makes it harder to show status although colours can help (e.g., specific colour for completed nodes)
 \item When the PERT/CPM charts become unwieldy, they are no longer used to manage the project.
-\end{itemize}
+\end{compactitem}
 
-\subsubsection{Uncertainty in project scheduling}
+\subsubsection{Uncertainty in project scheduling, Monte-Carlo}
 
-During project execution, however, a real-life project will never execute exactly as it was planned due to uncertainty. It can be ambiguity resulting from subjective estimates that are prone to human errors or it can be variability arising from unexpected events or risks. The main reason that PERT may provide inaccurate information about the project completion time is due to this schedule uncertainty. This inaccuracy is large enough to render such estimates as not helpful.
+A real-life project will never execute exactly as it was planned due to uncertainty. It can be ambiguity resulting from subjective estimates that are prone to human errors or it can be variability arising from unexpected events or risks (which can drastically affect motivation of project participants, as the new information is in conflict with personal structure of goals). The main reason that PERT may provide inaccurate information about the project completion time is due to this schedule uncertainty. This inaccuracy is large enough to render such estimates as not helpful.
 
 One possibility to maximise solution robustness is to include safety in the baseline schedule in order to absorb the anticipated disruptions. This is called proactive scheduling. A pure proactive scheduling is a utopia, incorporating safety in a baseline schedule that allows to cope with every possible disruption would lead to a baseline schedule with a very large make-span. A second approach, reactive scheduling, consists of defining a procedure to react to disruptions that cannot be absorbed by the baseline schedule.
 
-\subsection{Teams without project managers}
+Another approach incorporates Monte-Carlo analysis and simulates potential effects of schedule shifts.
 
-Importance for collaboration software (like basecamp) to have it's own methodology and provide subtle education for its users.
+% add Monte-Carlo description
 
-The bad: hard to adopt a different methodology. No room for creativity?
+\subsection{Motivation}
 
-The good: potentially more effective for beginners.
-
-
-
+% поняли, что есть разные методы организации и что фидбэк в них рулит и выбор существующих методологий зависит от необходимого фидбэка и сложности / динамичности системы (рынка) проекта. как-то так
+% поняли, 
 
 
+
+% Moving towards team-motivation
 
 %\chapter{Project management without project manager}
 %
