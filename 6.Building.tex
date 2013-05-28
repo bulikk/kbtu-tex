@@ -1,24 +1,32 @@
 \chapter{Building productivity mobile application}
 
+In this chapter the prototype of personal performance mobile application will be considered.
+
 \section{Abstractions and games}
-what part does mobile application could take in the scheme of performance
+There is an important notion of feedback within the concept of ``Flow" and appearing in all of the method of project management.
+
+The only application from considered ones in chapter \ref{chap:apps} did try to use a concept of feedback: ``Carrot". It used a game mechanic called ``Negative reinforcement" in order to state a bad system condition: there is a lot of tasks, that require attention.
 
 \subsection{Concept of time limitation}
 
-Describe the idea of resource limit as the mobile screen.
+Each task (that has a deadline) can be represented as a system with dynamic complexity. As focus is a limited resource, as a time, tasks that don't get enough attention can lead to a bad state of a system very fast. Thus causing lack of time and lack of focus, which recursively make situation even worse.
+
+Listed application didn't use the concept of limited resource. One of the ways to illustrate the limited resource was introduced by popular games: bubbles and tetris.
+
+Using a mobile screen as limitation to available tasks, it is possible to construct the following abstraction:
+
+\begin{compactitem}
+\item The vertical axis represents time available till deadline
+\item The space represents required focus and illustrates which tasks require immediate action
+\item Each can be represented as a circle, initial (normal) size of the circle is determined by its importance (important or not)
+\item Space can also group related tasks
+\end{compactitem}
+
 
 \section{Game mechanics in use}
 
-Describe the mechanics of the app and then check game mechanics.
+In the case of application there are two main dynamics used:
 
-\section{Feedback}
-
-Feedback is important, as a part of a flow.
-
-\section{Prototype}
-
-Screens of the application, presentation
-
-\section{Development plan}
-
-Next steps: how to fill the scheme
+\begin{compactenum}
+\item Appointment Dynamic, which requires to return at a predefined time to mark a task as ``in progress" or ``complete".\item Using disincentives to illustrate limited space: if there is not enough space, it is impossible to add new task
+\end{compactenum}
