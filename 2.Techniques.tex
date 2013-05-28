@@ -300,23 +300,21 @@ Ability to get instant feedback and adjust goals is defined by a natural human a
 	\hline
 \end{longtable}
 
-\subsection{PERT and Monte-Carlo simulation}
+\subsection{Program Evaluation and Review Technique}
 \label{sec:pert}
 
 % Relate to the previous sections
 
-It is also important to consider traditional ways of uncertainties management in order to understand the evolution of project management and understand a project representation as a system (iterative methodologies lead to simplification of such system).
+Let's also consider traditional ``waterfall" methodology  statistical tool, designed to analyse and represent the tasks involved in completing a given project called PERT (Program Evaluation and Review Technique).
 
-Traditional ``waterfall" methodology provides a statistical tool, designed to analyse and represent the tasks involved in completing a given project.
-
-PERT was developed was developed for the U.S. Navy Special Projects Office in 1957 to support the U.S. Navy's Polaris nuclear submarine project \cite{fazar}. It was able to incorporate uncertainty by making it possible to schedule a project while not knowing precisely the details and durations of all the activities. It is more of an event-oriented technique rather than start- and completion-oriented, and is used more in projects where time is the major factor rather than cost. It is applied to very large-scale, one-time, complex, non-routine infrastructure and Research and Development projects. An example of this was for the 1968 Winter Olympics in Grenoble which applied PERT from 1965 until the opening of the 1968 Games.
+PERT was developed for the U.S. Navy Special Projects Office in 1957 to support the U.S. Navy's Polaris nuclear submarine project \cite{fazar}. It was able to incorporate uncertainty by making it possible to schedule a project while not knowing precisely the details and durations of all the activities. It is more of an event-oriented technique rather than start- and completion-oriented, and is used more in projects where time is the major factor rather than cost. It is applied to very large-scale, one-time, complex, non-routine infrastructure and Research and Development projects. An example of this was for the 1968 Winter Olympics in Grenoble which applied PERT from 1965 until the opening of the 1968 Games.
 
 \subsubsection{Conventions}
 
 \begin{compactitem}
 % include pert illustration here
 \item A PERT chart is a tool that facilitates decision making. The first draft of a PERT chart will number its events sequentially in 10s (10, 20, 30, etc.) to allow the later insertion of additional events.
-\item Two consecutive events in a PERT chart are linked by activities, which are conventionally represented as arrows (see the diagram above).
+\item Two consecutive events in a PERT chart are linked by activities, which are conventionally represented as arrows.
 \item The events are presented in a logical sequence and no activity can commence until its immediately preceding event is completed.
 \item The planner decides which milestones should be PERT events and also decides their ``proper" sequence.
 \item A PERT chart may have multiple pages with many sub-tasks.
@@ -340,7 +338,7 @@ PERT was developed was developed for the U.S. Navy Special Projects Office in 19
 \item When the PERT/CPM charts become unwieldy, they are no longer used to manage the project.
 \end{compactitem}
 
-\subsubsection{Uncertainty in project scheduling, Monte-Carlo}
+\subsubsection{Uncertainty in project scheduling}
 
 A real-life project will never execute exactly as it was planned due to uncertainty. It can be ambiguity resulting from subjective estimates that are prone to human errors or it can be variability arising from unexpected events or risks (which can drastically affect motivation of project participants, as the new information is in conflict with personal structure of goals). The main reason that PERT may provide inaccurate information about the project completion time is due to this schedule uncertainty. This inaccuracy is large enough to render such estimates as not helpful.
 
@@ -348,14 +346,80 @@ One possibility to maximise solution robustness is to include safety in the base
 
 Another approach incorporates Monte-Carlo analysis and simulates potential effects of schedule shifts.
 
-% add Monte-Carlo description
+\subsection{Tracking status of a project}
 
-\subsection{Motivation}
+So, there is a technique to collect feedback in a large-scale projects. As any project could be considered as a system, it has different number of parts. As complexity of a system increases exponentially /cite{oconnor}, PERT tries to define relations and predict possible system states.
 
-% поняли, что есть разные методы организации и что фидбэк в них рулит и выбор существующих методологий зависит от необходимого фидбэка и сложности / динамичности системы (рынка) проекта. как-то так
-% поняли, 
+Use of iterative methods simplifies the system, and makes cause-and-effect relation clear.
 
+Now team working on a project is able to collect necessary feedback in order to understand the state of a system. Thus it is possible to measure effectiveness (and make necessary adjustments to processes). But team members should be motivated in order to perform best.
 
+\section{``Action Method" application and concept behind}
+
+This section describes an interesting technique, created by Behance company \cite{belsky}. It will be further used to construct an effectiveness guide.
+
+The Action Method begins with a simple premise: everything is a project. Most creative people struggle to make progress in all of their projects, with the greatest challenge being the sheer number of projects before a person! But once everything has been classified as a project, it is possible to breake each one down into its primary components: Action Steps, References, and Backburner Items.
+
+Every project in life can be reduced into these three primary components.
+
+\subsection{Primary components of ``Action Method"}
+
+\textbf{Action Steps}
+
+Action steps are the specific, concrete tasks: redraft and send the memo, post the blog entry, pay the electricity bill, etc.
+
+\textbf{References}
+
+References are any project-related handouts, sketches, notes, meeting minutes, manuals, websites, or ongoing discussions to refer back to. It is important to note that references are not actionable—they are simply there for reference when focusing on any particular project.
+
+\textbf{Backburner Items}
+
+Backburner items -- things that are not actionable now but may be someday. Perhaps it is an idea for a client for which there is no budget yet. Or maybe it is something you intend to do in a particular project at an unforeseen time in the future.
+
+Every project in life can be reduced into these three primary components.
+
+Let’s consider a sample project for a client. Assume a folder with that client’s name on it. Inside the folder there is a lot of References -- a copy of the contract, notes from meetings, and background information on the client. The Action Steps (to-do list) could be written as a list, attached to the front of the folder. On a sheet stapled to the inside back cover of the folder, Backburner list could keep track of the non-actionable ideas that come up while working on the project.
+
+With this hypothetical folder in mind, it is possible to imagine that the majority of focus would be on the Action Steps visible on the front cover. These Action Steps are always in plain view, while other parts accessible during the review phase.
+
+Personal projects can also be broken down into the same three elements. The Action Method starts by considering everything with a project lens and then breaking it down.
+
+\subsection{Action Steps in detail}
+
+Action Steps are the most important components of projects. The actual outcome of any idea is dependent on the Actions Steps that are captured and then completed by you or delegated to someone else. Action Steps are to be revered and treated as sacred in any project. The more clear and concrete an Action Step is, the less friction a person will encounter trying to do it. If an Action Step is vague or complicated, a person will probably skip over it to others on the list that are more straightforward.
+
+To avoid this, it is required to start each Action Step with a verb:
+\begin{compactitem}
+   \item Call programmer to discuss...
+   \item Install new software for...
+   \item Research the possibility of...
+   \item Mock up a sample of the...
+   \item Update XYZ document for...
+\end{compactitem}
+
+Verbs help to pull into Action Steps at first glance, efficiently indicating what type of action is required. For similar reasons, Action Steps should be kept short.
+
+Ideas don’t reveal themselves only in meetings, and neither should Action Steps.
+
+\textbf{An unowned Action Step will never be taken.}
+
+Every Action Step must be owned by a single person. While some Action Steps may involve the input of different people, accountability must reside in one individual’s hands. Some people who lead teams or have assistants will capture Action Steps and delegate them to others. However, Action Step must still be owned by the person ultimately responsible.
+
+\textbf{Every Action Step must be owned by a single person.}
+
+The reason comes down to accountability. The practice of simply emailing someone a task to complete does not provide any assurance that it will be completed. For this reason, Action Steps that a person is ultimately responsible for should remain on your list until completed—even when a person have delegated them to others. Simply marking that the Action Step has been delegated and to whom is sufficient.
+
+\textbf{Managerial Action Steps should be treated differently.}
+
+Aside from the Action Steps that are personal, there are three other types of Action Steps one should keep in mind as the leader of a project. The first type is delegated Action Steps. The second type is ``Ensure Action Steps." Sometimes one will want to create an Action Step to ensure that something is completed properly in the future. Rather than being a nag to a  team, one can create an Action Step that starts with the word ``ensure." Creating ``Ensure Action Steps" is a better alternative then sending numerous reminder emails to team members.
+
+\textbf{The last type of managerial Action Step is the ``Awaiting" Action Step.}
+
+When one leaves a voicemail for someone, send a message to a potential customer, or respond to an email and clear it from the inbox, it is possible to forget to follow-up if the person fails to respond. So one should create an Action Step that starts with ``Awaiting". In the online task manager one will set a target date for one week later. After a week passes, one will be reminded to follow up.
+
+\textbf{Foster an action-oriented culture.}
+
+A team needs an action-oriented culture to capitalise on creativity and effectiveness. It may feel a bit aggressive to ask people to capture an Action Step on paper, but fostering a culture in which such reminders are welcome helps ensure that Action Steps are not lost.
 
 % Moving towards team-motivation
 
