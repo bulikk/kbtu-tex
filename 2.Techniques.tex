@@ -1,4 +1,5 @@
 \chapter{Project management techniques for small teams and startups}
+\label{chap:techniques}
 
 % Project management in the past
 In the past project management was different. Not only because the formal discipline was mostly applied to the large projects lasting several years and costing millions of dollars, but also used a different approach, evolved from ancient military regimes, where relatively few people directed large number of others \cite{brandon}.
@@ -42,6 +43,12 @@ That is, while there is value in the items on the right, we value the items on t
 
 Meaning, that self-organisation and motivation are important, working software will be more useful and welcome as a presentation for clients in meetings, collaboration leads to a better product, effectively tailored to the customer needs and quick changes allow higher quality of product.
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{resources/generic-diagram-agile.png}
+	\caption[Generic agile diagram]{Generic agile diagram}
+\end{figure}
+
 % Prinicples
 
 According to Kent Beck,\cite{beck} the Agile Manifesto is based on twelve principles:
@@ -65,7 +72,7 @@ According to Kent Beck,\cite{beck} the Agile Manifesto is based on twelve princi
 Agile development is popular in a certain types of environment, including small teams. However a number of thing may negatively impact the success of an agile project:
 
 \begin{compactenum}
-\item Large-scale development efforts (>20 developers), though scaling strategies \cite{ambler} and evidence of some large projects \cite{schaaf} have been described.
+\item Large-scale development efforts (\textgreater 20 developers), though scaling strategies \cite{ambler} and evidence of some large projects \cite{schaaf} have been described.
 \item Distributed development efforts (non-colocated teams). Still there are examples of successful companies (37 Signals).
 \item Forcing an agile process on a development team
 \item Mission-critical systems where failure is not an option at any cost (e.g. software for air traffic control).
@@ -102,6 +109,12 @@ The Scrum Team consists of a Product Owner, the Development Team, and a Scrum Ma
 Scrum Teams deliver products iteratively and incrementally, maximising opportunities for feedback. Incremental deliveries of ``Done" product ensure a potentially useful version of 
 working product is always available.
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{resources/scrum-process.png}
+	\caption[Scrum process]{Scrum process}
+\end{figure}
+
 \subsection{Scrum events}
 
 Prescribed events are used in Scrum to create regularity and to minimise the need for meetings not defined in Scrum. Scrum uses time-boxed events, such that every event has a maximum duration. This ensures an appropriate amount of time is spent planning without allowing waste in the planning process.
@@ -116,8 +129,15 @@ Scrum’s artifacts represent work or value in various ways that are useful in p
 
 RAD is an integrated set of techniques, guidelines and tools that facilitate deploying a customer's software needs within a short period of time. This predefined timeframe is called a ``timebox". The software product evolves during the RAD development process based on continued customer feedback. In addition, the whole software product is not delivered at once, but is delivered in pieces by order of business importance. \cite{gottesdiener}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{resources/rad-incremental-delivery.png}
+	\caption[RAD incremental delivery]{RAD incremental delivery}
+\end{figure}
+
 % bull's eye for RAD
 % Timebox for each chunk
+
 
 The RAD process defies a linear definition of steps carried out in a sequence. \cite{gottesdiener}
 
@@ -128,7 +148,20 @@ The RAD process defies a linear definition of steps carried out in a sequence. \
 
 \item User design phase -- during this phase, users interact with systems analysts and develop models and prototypes that represent all system processes, inputs, and outputs. The RAD groups or subgroups typically use a combination of Joint Application Development (JAD) techniques and CASE tools to translate user needs into working models. User Design is a continuous interactive process that allows users to understand, modify, and eventually approve a working model of the system that meets their needs.
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{resources/Rad-bulls-eye.png}
+	\caption[Bull's eye for RAD]{Bull's eye for RAD, it should he the business problem, not the technology.}
+\end{figure}
+
 \item Construction phase -- focuses on program and application development task similar to the SDLC. In RAD, however, users continue to participate and can still suggest changes or improvements as actual screens or reports are developed. Its tasks are programming and application development, coding, unit-integration and system testing.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{resources/rad-timebox.png}
+	\caption[RAD timeboxing]{RAD timeboxing for each ``chunk". It forces project team to have a market product orientation}
+\end{figure}
+
 
 \item Cutover phase -- resembles the final tasks in the SDLC implementation phase, including data conversion, testing, changeover to the new system, and user training. Compared with traditional methods, the entire process is compressed. As a result, the new system is built, delivered, and placed in operation much sooner.
 \end{enumerate}
@@ -144,6 +177,12 @@ Test-driven development (TDD) is a software development process that relies on t
 \subsection{TDD Cycle}
 
 The TDD techniques is particularly interesting in terms of feedback, which helps to fail fast, be flexible and get a feeling of moving towards a goal. This is reached by using the following cycle.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{resources/Test-driven_development.png}
+	\caption[Test-Driven Development Cycle]{Test-Driven Development Cycle}
+\end{figure}
 
 \subsubsection{Add a test}
 
@@ -309,6 +348,13 @@ Let's also consider traditional ``waterfall" methodology  statistical tool, desi
 
 PERT was developed for the U.S. Navy Special Projects Office in 1957 to support the U.S. Navy's Polaris nuclear submarine project \cite{fazar}. It was able to incorporate uncertainty by making it possible to schedule a project while not knowing precisely the details and durations of all the activities. It is more of an event-oriented technique rather than start- and completion-oriented, and is used more in projects where time is the major factor rather than cost. It is applied to very large-scale, one-time, complex, non-routine infrastructure and Research and Development projects. An example of this was for the 1968 Winter Olympics in Grenoble which applied PERT from 1965 until the opening of the 1968 Games.
 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{resources/pert.png}
+	\caption[PERT Chart]{PERT Chart}
+\end{figure}
+
 \subsubsection{Conventions}
 
 \begin{compactitem}
@@ -358,7 +404,14 @@ Now team working on a project is able to collect necessary feedback in order to 
 
 This section describes an interesting technique, created by Behance company \cite{belsky}. It will be further used to construct an effectiveness guide.
 
-The Action Method begins with a simple premise: everything is a project. Most creative people struggle to make progress in all of their projects, with the greatest challenge being the sheer number of projects before a person! But once everything has been classified as a project, it is possible to breake each one down into its primary components: Action Steps, References, and Backburner Items.
+The Action Method begins with a simple premise: everything is a project. Most creative people struggle to make progress in all of their projects, with the greatest challenge being the sheer number of projects before a person! But once everything has been classified as a project, it is possible to break each one down into its primary components: Action Steps, References, and Backburner Items.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{resources/actionmethod.png}
+	\caption[Action Method by Behance]{Action Method Landing Page by Behance}
+\end{figure}
 
 Every project in life can be reduced into these three primary components.
 
